@@ -23,3 +23,7 @@
 - Pelin päätyttyä:
   - Aloita uusi peli
   - Poista pelaaja
+
+**Luokkakaavio**
+
+![Xanadu luokkakaavio](xanadu-class-diagram.png)
