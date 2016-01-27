@@ -9,6 +9,6 @@ public enum Vari {
     PUNAINEN,
     SININEN,
     VALKOINEN,
-    VIHREÄ,
+    VIHREA,
     VIOLETTI
 }

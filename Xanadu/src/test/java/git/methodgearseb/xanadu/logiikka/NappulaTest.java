@@ -60,7 +60,7 @@ public class NappulaTest {
             Vari.PINKKI,
             Vari.PUNAINEN,
             Vari.SININEN,
-            Vari.VIHREÄ,
+            Vari.VIHREA,
             Vari.VIOLETTI
         };
         
