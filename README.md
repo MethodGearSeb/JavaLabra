@@ -14,6 +14,6 @@ Pelissä on 2 pelaajaa ja yksi pelialue. Pelialue koostuu 16 ruudusta. Ruutu koo
 
 #### Muistiinpanoja itselleni
 
-Muista toistuvasti palata "...16-3/blob/master/ohjeet/Maven-ja-PIT.md"-
+Muista toistuvasti palata [Maven ja PIT](https://github.com/javaLabra/Javalabra2016-3/blob/master/ohjeet/Maven-ja-PIT.md) -
 ohjeisiin nähdäksesi viikottaiseen raportin tekoon liittyvät neuvot. Katso
 siellä myös "Pitin konfigurointi"-osio.
