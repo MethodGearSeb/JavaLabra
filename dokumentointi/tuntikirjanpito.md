@@ -7,3 +7,7 @@
 ####Maanantai 25.1.
 
 - 4 tuntia, viikko 2 tehtäviä
+
+####Perjantai 5.2.
+
+- 2,5 tuntia, viikko 3 tehtäviä

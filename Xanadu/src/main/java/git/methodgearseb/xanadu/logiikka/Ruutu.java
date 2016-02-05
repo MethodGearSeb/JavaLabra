@@ -1,20 +1,57 @@
 package git.methodgearseb.xanadu.logiikka;
 
 public class Ruutu {
-    
-    private Vari vari1;
-    private Vari vari2;
+
+    private final Vari ylempiVari;
+    private final Vari alempiVari;
 
     public Ruutu(Vari vari1, Vari vari2) {
-        this.vari1 = vari1;
-        this.vari2 = vari2;
+        this.ylempiVari = vari1;
+        this.alempiVari = vari2;
     }
 
-    public Vari getVari1() {
-        return vari1;
+    public Vari getYlempiVari() {
+        return ylempiVari;
     }
 
-    public Vari getVari2() {
-        return vari2;
+    public Vari getAlempiVari() {
+        return alempiVari;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+
+        if (obj.getClass() != getClass()) {
+            return false;
+        }
+
+        Ruutu ruutu = (Ruutu) obj;
+
+        return ruutu.hashCode() == hashCode();
+    }
+
+    @Override
+    public int hashCode() {
+        int luku1 = 0, luku2 = 0;
+        String ylempiString = String.valueOf(ylempiVari);
+        String alempiString = String.valueOf(alempiVari);
+
+        for (char c : ylempiString.toCharArray()) {
+            luku1 += Character.valueOf(c);
+        }
+
+        for (char c : alempiString.toCharArray()) {
+            luku2 += Character.valueOf(c);
+        }
+
+        return luku1 * luku2;
+    }
+
+    @Override
+    public String toString() {
+        return ylempiVari + ", " + alempiVari;
     }
 }

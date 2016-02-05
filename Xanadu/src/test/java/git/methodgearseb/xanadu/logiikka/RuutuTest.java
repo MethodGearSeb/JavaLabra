@@ -33,7 +33,22 @@ public class RuutuTest {
 
     @Test
     public void ruutuTallentaaOikeatVarit() {
-        assertEquals(Vari.PINKKI, ruutu.getVari1());
-        assertEquals(Vari.PUNAINEN, ruutu.getVari2());
+        assertEquals(Vari.PINKKI, ruutu.getYlempiVari());
+        assertEquals(Vari.PUNAINEN, ruutu.getAlempiVari());
+    }
+    
+    @Test
+    public void ruutuToStringToimii() {
+        assertEquals("PINKKI, PUNAINEN", ruutu.toString());
+    }
+    
+    @Test
+    public void ruudutOvatSamatKunVaritOvatSamat() {
+        assertEquals(ruutu, new Ruutu(Vari.PUNAINEN, Vari.PINKKI));
+    }
+    
+    @Test
+    public void ruudutOvatEriKunVaritOvatEri() {
+        assertNotEquals(ruutu, new Ruutu(Vari.BEIGE, Vari.BEIGE));
     }
 }
