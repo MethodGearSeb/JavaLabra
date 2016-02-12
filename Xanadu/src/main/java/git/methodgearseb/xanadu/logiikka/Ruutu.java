@@ -17,6 +17,10 @@ public class Ruutu {
     public Vari getAlempiVari() {
         return alempiVari;
     }
+    
+    public boolean sisaltaaVarin(Vari vari) {
+        return ylempiVari == vari || alempiVari == vari;
+    }
 
     @Override
     public boolean equals(Object obj) {
