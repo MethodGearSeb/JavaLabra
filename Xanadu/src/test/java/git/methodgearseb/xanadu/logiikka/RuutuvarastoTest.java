@@ -5,6 +5,7 @@
  */
 package git.methodgearseb.xanadu.logiikka;
 
+import git.methodgearseb.xanadu.osat.Ruutu;
 import java.util.*;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -19,7 +20,7 @@ import static org.junit.Assert.*;
  */
 public class RuutuvarastoTest {
 
-    private Ruutuvarasto varasto;
+    private PelialueRakentaja varasto;
     private List<Ruutu> ruudut;
 
     public RuutuvarastoTest() {
@@ -35,7 +36,7 @@ public class RuutuvarastoTest {
 
     @Before
     public void setUp() {
-        varasto = new Ruutuvarasto();
+        varasto = new PelialueRakentaja();
         ruudut = varasto.getRuudut();
     }
 
@@ -65,7 +66,7 @@ public class RuutuvarastoTest {
     @Test
     public void ruudukotMuuttuvat() {
         boolean eivatOleSamat = false;
-        List<Ruutu> verrattavat = new Ruutuvarasto().getRuudut();
+        List<Ruutu> verrattavat = new PelialueRakentaja().getRuudut();
 
         for (int i = 0; i < ruudut.size() && i < verrattavat.size(); i++) {
 

@@ -1,12 +1,14 @@
 package git.methodgearseb.xanadu.logiikka;
 
+import git.methodgearseb.xanadu.osat.Vari;
+import git.methodgearseb.xanadu.osat.Ruutu;
 import java.util.*;
 
-public class Ruutuvarasto {
+public class PelialueRakentaja {
 
     private List<Ruutu> ruudut;
 
-    public Ruutuvarasto() {
+    public PelialueRakentaja() {
         ruudut = new ArrayList<>();
         List<Ruutu> jarjestetty = new ArrayList<>();
         Random random = new Random();

@@ -1,5 +1,6 @@
 package git.methodgearseb.xanadu.logiikka;
 
+import git.methodgearseb.xanadu.osat.Pelialue;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

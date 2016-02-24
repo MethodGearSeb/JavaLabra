@@ -1,12 +1,13 @@
-package git.methodgearseb.xanadu.logiikka;
+package git.methodgearseb.xanadu.osat;
 
+import git.methodgearseb.xanadu.logiikka.PelialueRakentaja;
 import java.util.*;
 
 public class Pelialue {
     List<Ruutu> ruudut;
 
     public Pelialue() {
-        ruudut = new Ruutuvarasto().getRuudut();
+        ruudut = new PelialueRakentaja().getRuudut();
     }
 
     public List<Ruutu> getRuudut() {

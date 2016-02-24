@@ -1,14 +1,12 @@
-package git.methodgearseb.xanadu.logiikka;
+package git.methodgearseb.xanadu.osat;
 
 public class Nappula {
     
-    private Vari vari;
+    private final Vari vari;
     private Ruutu ruutu;
 
     public Nappula(Vari vari) {
-        if (vari == Vari.VALKOINEN || vari == Vari.MUSTA) {
-            this.vari = vari;
-        }
+        this.vari = vari;
     }
 
     public Vari getVari() {

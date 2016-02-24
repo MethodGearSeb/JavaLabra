@@ -1,4 +1,4 @@
-package git.methodgearseb.xanadu.logiikka;
+package git.methodgearseb.xanadu.osat;
 
 public enum Vari {
     BEIGE,

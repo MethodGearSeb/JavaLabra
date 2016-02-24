@@ -5,6 +5,9 @@
  */
 package git.methodgearseb.xanadu.logiikka;
 
+import git.methodgearseb.xanadu.osat.Vari;
+import git.methodgearseb.xanadu.osat.Nappula;
+import git.methodgearseb.xanadu.osat.Ruutu;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
