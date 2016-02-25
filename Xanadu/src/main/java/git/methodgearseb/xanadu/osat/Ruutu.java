@@ -1,24 +1,26 @@
 package git.methodgearseb.xanadu.osat;
 
+import java.awt.Color;
+
 public class Ruutu {
 
-    private final Vari ylempiVari;
-    private final Vari alempiVari;
+    private final Color ylempiVari;
+    private final Color alempiVari;
 
-    public Ruutu(Vari vari1, Vari vari2) {
+    public Ruutu(Color vari1, Color vari2) {
         this.ylempiVari = vari1;
         this.alempiVari = vari2;
     }
 
-    public Vari getYlempiVari() {
+    public Color getYlempiVari() {
         return ylempiVari;
     }
 
-    public Vari getAlempiVari() {
+    public Color getAlempiVari() {
         return alempiVari;
     }
-    
-    public boolean sisaltaaVarin(Vari vari) {
+
+    public boolean sisaltaaVarin(Color vari) {
         return ylempiVari == vari || alempiVari == vari;
     }
 

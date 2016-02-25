@@ -1,31 +1,45 @@
 package git.methodgearseb.xanadu.logiikka;
 
-import git.methodgearseb.xanadu.osat.Vari;
 import git.methodgearseb.xanadu.osat.Ruutu;
+import git.methodgearseb.xanadu.tyokalut.VarinMaarittaja;
 import java.util.*;
+import javafx.scene.paint.Color;
 
 public class PelialueRakentaja {
 
-    private List<Ruutu> ruudut;
+    private final List<Ruutu> ruudut;
 
     public PelialueRakentaja() {
         ruudut = new ArrayList<>();
         List<Ruutu> jarjestetty = new ArrayList<>();
+        VarinMaarittaja maarittaja = new VarinMaarittaja();
         Random random = new Random();
-        Vari[] varit = new Vari[]{
-            Vari.KELTAINEN,
-            Vari.PINKKI,
-            Vari.PUNAINEN,
-            Vari.SININEN,
-            Vari.BEIGE,
-            Vari.ORANSSI,
-            Vari.VIHREA,
-            Vari.VIOLETTI
+        Color[] raakaVarit = new Color[]{
+            Color.KHAKI, // yellow
+            Color.VIOLET, // pink
+            Color.ORANGERED, // red
+            Color.TEAL, // blue
+            Color.PERU, // beige
+            Color.DARKORANGE, // orange
+            Color.LIMEGREEN, // green
+            Color.PURPLE // purple
         };
+        java.awt.Color[] varit = new java.awt.Color[raakaVarit.length];
+        for (int i = 0; i < varit.length; i++) {
+            Color raakaVari = raakaVarit[i];
+
+            maarittaja.setVari(raakaVari);
+
+            float r = maarittaja.punainen();
+            float g = maarittaja.vihrea();
+            float b = maarittaja.sininen();
+            varit[i] = new java.awt.Color(r, g, b);
+        }
 
         for (int i = 0; i < 4; i++) {
             for (int j = 4; j < varit.length; j++) {
                 jarjestetty.add(new Ruutu(varit[i], varit[j]));
+//                jarjestetty.add(new Ruutu(varit[1], varit[4]));
             }
         }
 

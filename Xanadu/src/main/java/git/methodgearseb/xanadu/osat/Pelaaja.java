@@ -1,5 +1,6 @@
 package git.methodgearseb.xanadu.osat;
 
+import git.methodgearseb.xanadu.tyokalut.Vari;
 import java.util.*;
 
 public class Pelaaja {

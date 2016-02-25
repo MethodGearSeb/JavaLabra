@@ -1,5 +1,7 @@
 package git.methodgearseb.xanadu.osat;
 
+import git.methodgearseb.xanadu.tyokalut.Vari;
+
 public class Nappula {
     
     private final Vari vari;
