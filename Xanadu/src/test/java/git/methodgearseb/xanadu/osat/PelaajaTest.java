@@ -1,7 +1,7 @@
-package git.methodgearseb.xanadu.logiikka;
+package git.methodgearseb.xanadu.osat;
 
-import git.methodgearseb.xanadu.tyokalut.Vari;
 import git.methodgearseb.xanadu.osat.Pelaaja;
+import java.awt.Color;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -26,7 +26,7 @@ public class PelaajaTest {
     
     @Before
     public void setUp() {
-        pelaaja = new Pelaaja(Vari.MUSTA);
+        pelaaja = new Pelaaja(Color.BLACK);
     }
     
     @After
@@ -40,20 +40,13 @@ public class PelaajaTest {
     
     @Test
     public void nappulatOvatMustia() {
-        assertEquals(Vari.MUSTA, pelaaja.getNappulat().get(0).getVari());
+        assertEquals(Color.BLACK, pelaaja.getNappulat().get(0).getVari());
     }
     
     @Test
     public void nappulatOvatValkoisia() {
-        pelaaja = new Pelaaja(Vari.VALKOINEN);
+        pelaaja = new Pelaaja(Color.WHITE);
         
-        assertEquals(Vari.VALKOINEN, pelaaja.getNappulat().get(0).getVari());
-    }
-    
-    @Test
-    public void nappulatEivatOleBeigeja() {
-        pelaaja = new Pelaaja(Vari.BEIGE);
-        
-        assertNotEquals(Vari.BEIGE, pelaaja.getNappulat().get(0).getVari());
+        assertEquals(Color.WHITE, pelaaja.getNappulat().get(0).getVari());
     }
 }

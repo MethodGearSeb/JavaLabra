@@ -11,3 +11,11 @@
 ####Perjantai 5.2.
 
 - 2,5 tuntia, viikko 3 tehtäviä
+
+####Torstai 25.2.
+
+- 6 tuntia
+
+####Perjantai 26.2.
+
+- 2 tuntia

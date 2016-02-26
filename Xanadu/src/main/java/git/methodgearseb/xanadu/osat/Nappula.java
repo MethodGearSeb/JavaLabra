@@ -1,17 +1,17 @@
 package git.methodgearseb.xanadu.osat;
 
-import git.methodgearseb.xanadu.tyokalut.Vari;
+import java.awt.Color;
 
 public class Nappula {
     
-    private final Vari vari;
+    private final Color vari;
     private Ruutu ruutu;
 
-    public Nappula(Vari vari) {
+    public Nappula(Color vari) {
         this.vari = vari;
     }
 
-    public Vari getVari() {
+    public Color getVari() {
         return vari;
     }
 

@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package git.methodgearseb.xanadu.logiikka;
+package git.methodgearseb.xanadu.osat;
 
-import git.methodgearseb.xanadu.tyokalut.Vari;
 import git.methodgearseb.xanadu.osat.Nappula;
 import git.methodgearseb.xanadu.osat.Ruutu;
+import java.awt.Color;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -20,6 +20,9 @@ import static org.junit.Assert.*;
  * @author sexsarvi
  */
 public class NappulaTest {
+    
+    private Nappula n1;
+    private Nappula n2;
     
     public NappulaTest() {
     }
@@ -34,6 +37,8 @@ public class NappulaTest {
     
     @Before
     public void setUp() {
+        n1 = new Nappula(Color.BLACK);
+        n2 = new Nappula(Color.WHITE);
     }
     
     @After
@@ -42,46 +47,26 @@ public class NappulaTest {
     
     @Test
     public void nappulaVoiOllaMusta() {
-        Nappula nappula = new Nappula(Vari.MUSTA);
-        
-        assertEquals(Vari.MUSTA, nappula.getVari());
+        assertEquals(Color.BLACK, n1.getVari());
     }
     
     @Test
     public void nappulaVoiOllaValkoinen() {
-        Nappula nappula = new Nappula(Vari.VALKOINEN);
-        
-        assertEquals(Vari.VALKOINEN, nappula.getVari());
-    }
-    
-    @Test
-    public void nappulaEiVoiOllaMuunVarinen() {
-        Vari[] varit = {
-            Vari.BEIGE,
-            Vari.KELTAINEN,
-            Vari.ORANSSI,
-            Vari.PINKKI,
-            Vari.PUNAINEN,
-            Vari.SININEN,
-            Vari.VIHREA,
-            Vari.VIOLETTI
-        };
-        
-        for (int i = 0; i < varit.length; i++) {
-            Vari vari = varit[i];
-            Nappula nappula = new Nappula(vari);
-            
-            assertNotEquals(vari, nappula.getVari());
-        }
+        assertEquals(Color.WHITE, n2.getVari());
     }
     
     @Test
     public void nappulalleVoiAsettaaRuudun() {
-        Nappula nappula = new Nappula(Vari.MUSTA);
-        Ruutu ruutu = new Ruutu(Vari.BEIGE, Vari.BEIGE);
+        Nappula nappula = new Nappula(Color.BLACK);
+        Ruutu ruutu = new Ruutu(Color.BLACK, Color.BLACK);
         
         nappula.setRuutu(ruutu);
         
         assertEquals(ruutu, nappula.getRuutu());
+    }
+    
+    @Test
+    public void getVariToimii() {
+        assertEquals(Color.BLACK, n1.getVari());
     }
 }

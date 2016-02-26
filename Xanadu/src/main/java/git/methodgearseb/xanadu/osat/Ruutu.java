@@ -55,9 +55,4 @@ public class Ruutu {
 
         return luku1 * luku2;
     }
-
-    @Override
-    public String toString() {
-        return ylempiVari + ", " + alempiVari;
-    }
 }

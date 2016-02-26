@@ -18,12 +18,12 @@ import static org.junit.Assert.*;
  *
  * @author Sebastian
  */
-public class RuutuvarastoTest {
+public class PelialueRakentajaTest {
 
     private PelialueRakentaja varasto;
     private List<Ruutu> ruudut;
 
-    public RuutuvarastoTest() {
+    public PelialueRakentajaTest() {
     }
 
     @BeforeClass

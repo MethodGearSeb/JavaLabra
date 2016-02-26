@@ -13,18 +13,6 @@ public class VarinMaarittaja {
         this.vari = vari;
     }
     
-    public float savy() {
-        return (float) vari.getHue();
-    }
-    
-    public float kyllaisyys() {
-        return (float) vari.getSaturation();
-    }
-    
-    public float kirkkaus() {
-        return (float) vari.getBrightness();
-    }
-    
     public float punainen() {
         return (float) vari.getRed();
     }

@@ -1,4 +1,4 @@
-package git.methodgearseb.xanadu.logiikka;
+package git.methodgearseb.xanadu.osat;
 
 import git.methodgearseb.xanadu.osat.Pelialue;
 import org.junit.After;

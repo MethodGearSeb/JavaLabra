@@ -1,13 +1,13 @@
 package git.methodgearseb.xanadu.osat;
 
-import git.methodgearseb.xanadu.tyokalut.Vari;
+import java.awt.Color;
 import java.util.*;
 
 public class Pelaaja {
 
     List<Nappula> nappulat;
 
-    public Pelaaja(Vari vari) {
+    public Pelaaja(Color vari) {
         nappulat = new ArrayList<>();
         
         for (int i = 0; i < 8; i++) {
