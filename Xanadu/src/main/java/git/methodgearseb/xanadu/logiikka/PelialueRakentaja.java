@@ -7,7 +7,7 @@ import javafx.scene.paint.Color;
 
 public class PelialueRakentaja {
 
-    private final List<Ruutu> ruudut;
+    private final ArrayList<Ruutu> ruudut;
 
     public PelialueRakentaja() {
         ruudut = new ArrayList<>();
@@ -56,7 +56,7 @@ public class PelialueRakentaja {
         }
     }
 
-    public List<Ruutu> getRuudut() {
+    public ArrayList<Ruutu> getRuudut() {
         return ruudut;
     }
 }

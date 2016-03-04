@@ -1,30 +1,37 @@
 package git.methodgearseb.xanadu.kuuntelijat;
 
+import git.methodgearseb.xanadu.liittyma.Liittyma;
 import java.awt.Color;
-import java.awt.Graphics2D;
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
+import java.awt.Graphics;
+import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
-import java.awt.geom.Ellipse2D;
 
-public class RuutuKuuntelija extends MouseAdapter {
-    
-    private final Graphics2D g;
+public class RuutuKuuntelija implements MouseListener {
 
-    public RuutuKuuntelija(Graphics2D g) {
-        this.g = g;
-    }
+    private final Liittyma kuulija; 
 
-    public void actionPerformed(ActionEvent e) {
-        Ellipse2D nappula = new Ellipse2D.Double(10, 10, 80, 80);
-        g.setColor(Color.WHITE);
-        g.fill(nappula);
+    public RuutuKuuntelija(Liittyma kuulija) {
+        this.kuulija = kuulija;
     }
 
     @Override
-    public void mousePressed(MouseEvent e) {
-        Ellipse2D nappula = new Ellipse2D.Double(10, 10, 80, 80);
-        g.setColor(Color.WHITE);
-        g.fill(nappula);
+    public void mouseClicked(MouseEvent me) {
+        kuulija.paintComponents(kuulija.getGraphics());
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent me) {
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent me) {
+    }
+
+    @Override
+    public void mouseExited(MouseEvent me) {
+    }
+
+    @Override
+    public void mousePressed(MouseEvent me) {
     }
 }

@@ -56,16 +56,6 @@ public class NappulaTest {
     }
     
     @Test
-    public void nappulalleVoiAsettaaRuudun() {
-        Nappula nappula = new Nappula(Color.BLACK);
-        Ruutu ruutu = new Ruutu(Color.BLACK, Color.BLACK);
-        
-        nappula.setRuutu(ruutu);
-        
-        assertEquals(ruutu, nappula.getRuutu());
-    }
-    
-    @Test
     public void getVariToimii() {
         assertEquals(Color.BLACK, n1.getVari());
     }

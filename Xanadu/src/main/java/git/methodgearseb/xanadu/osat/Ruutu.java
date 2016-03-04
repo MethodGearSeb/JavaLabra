@@ -6,10 +6,12 @@ public class Ruutu {
 
     private final Color ylempiVari;
     private final Color alempiVari;
+    private Nappula nappula;
 
     public Ruutu(Color vari1, Color vari2) {
         this.ylempiVari = vari1;
         this.alempiVari = vari2;
+        this.nappula = null;
     }
 
     public Color getYlempiVari() {
@@ -18,6 +20,14 @@ public class Ruutu {
 
     public Color getAlempiVari() {
         return alempiVari;
+    }
+
+    public Nappula getNappula() {
+        return nappula;
+    }
+
+    public void setNappula(Nappula nappula) {
+        this.nappula = nappula;
     }
 
     public boolean sisaltaaVarin(Color vari) {

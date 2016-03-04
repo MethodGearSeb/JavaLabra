@@ -9,15 +9,23 @@ public class Pelaaja {
 
     public Pelaaja(Color vari) {
         nappulat = new ArrayList<>();
-        
+
         for (int i = 0; i < 8; i++) {
             Nappula nappula = new Nappula(vari);
-            
+
             nappulat.add(nappula);
         }
     }
 
     public List<Nappula> getNappulat() {
         return nappulat;
+    }
+
+    public Nappula kaytaNappula() {
+        if (nappulat.size() > 0) {
+            return nappulat.remove(0);
+        } else {
+            return null;
+        }
     }
 }
